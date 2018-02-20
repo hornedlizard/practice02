@@ -13,4 +13,21 @@ public class Prob3 {
 		// 수정된 배열 원소 출력
 		printCharArray(c);
 	}
+	
+	public static void replaceSpace(char a[]) {
+ 		char temp = ' ';
+		for (int i = 0; i < a.length; i++) {
+			temp = a[i];
+			if (temp==' ') {
+				a[i]=',';
+			}
+		}
+	}
+	
+	public static void printCharArray(char a[]) {
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i]);
+		}
+		System.out.println();
+	}
 }
